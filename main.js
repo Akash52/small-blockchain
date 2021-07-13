@@ -92,12 +92,12 @@ let mvvcoin = new Blockchain()
 mvvcoin.createTransaction(new Transaction('address1', 'address2', 100))
 mvvcoin.createTransaction(new Transaction('address1', 'address2', 20))
 
-console.log('\n Starting the miner...')
+console.log('\n Starting the miner...'.bgGreen.white)
 mvvcoin.minPendingTransaction('abcaddress')
 
 console.log('\n Balance of abc is', mvvcoin.getBalanceOfAddress('abcaddress'))
 
-console.log('\n Starting the miner again...')
+console.log('\n Starting the miner again...'.bgGreen.white)
 mvvcoin.minPendingTransaction('xyz-address')
 
 console.log('\n Balance of abc is', mvvcoin.getBalanceOfAddress('abcaddress'))
